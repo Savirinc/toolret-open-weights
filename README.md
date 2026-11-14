@@ -4,8 +4,12 @@ This repository lets anyone check the ToolRet scores Unfragile reported in Novem
 that produced them, the candidates and reranker scores for every question, and a script that recomputes every
 figure from those files against the benchmark's own answer key. No GPU is needed to check them.
 
-**Built with Llama.** The reranker is `nvidia/llama-nemotron-rerank-vl-1b-v2`, under the NVIDIA Open Model License
-and the Llama 3.2 Community License.
+This repository contains no model weights. The two models are downloaded from NVIDIA's pages; the fine-tuned versions
+are not released.
+
+**Licences. Built with Llama.** The embedder, `nvidia/Nemotron-3.5-Embed-1B-BF16`, is under the OpenMDW-1.1 licence.
+The reranker, `nvidia/llama-nemotron-rerank-vl-1b-v2`, is under the NVIDIA Open Model License and the Llama 3.2
+Community License.
 
 ## The scores
 
@@ -73,8 +77,9 @@ The fine-tuned weights are not published or served. Their candidate lists and re
 | `results/` | The per-subset result files, and `numbers.json`, the single table every published figure is taken from |
 | `scripts/` | The scripts that ran the pipeline, as they were run |
 
-The benchmark's questions, tool texts and answer key are **not** copied here, because their datasets state no
-licence. The scripts and `rescore.py` read them from Hugging Face at pinned revisions.
+ToolRet's datasets state no licence. Their questions, tool texts and answer key are **not** copied here; the scripts
+and `rescore.py` read them from Hugging Face at pinned revisions. We do not claim that reading them from Hugging Face
+settles what may be done with them; that is unresolved.
 
 ## How the runs were made
 
