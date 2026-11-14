@@ -1,0 +1,382 @@
+{
+ "train_rows": 208826,
+ "test_questions": 7961,
+ "threshold_R2": 0.6,
+ "threshold_R3_cosine": 0.92,
+ "rules": "R1+R1b+R2+R3",
+ "r3_pairs": 3178,
+ "train_rows_dropped": 7948,
+ "train_rows_dropped_by_rule": {
+  "R1": 815,
+  "R1b": 0,
+  "R2": 7167,
+  "R3": 2968
+ },
+ "test_questions_matched": 1402,
+ "dedup_test_set_size": 6559,
+ "matched_in_domain": 1393,
+ "matched_out_of_domain": 9,
+ "unseen_answer_tool_questions": 5546,
+ "inferred_source_all_rows": {
+  "apigen": 58805,
+  "toolbench": 141160,
+  "toolace": 8861
+ },
+ "inferred_source_kept_rows": {
+  "apigen": 53186,
+  "toolbench": 138891,
+  "toolace": 8801
+ },
+ "per_subset": {
+  "apibank": {
+   "category": "web",
+   "questions": 101,
+   "matched_any": 2,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 2,
+   "matched_R3": 0,
+   "train_rows_dropped": 2
+  },
+  "apigen": {
+   "category": "web",
+   "questions": 1000,
+   "matched_any": 587,
+   "matched_R1": 22,
+   "matched_R1b": 0,
+   "matched_R2": 570,
+   "matched_R3": 253,
+   "train_rows_dropped": 5606
+  },
+  "appbench": {
+   "category": "customized",
+   "questions": 32,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "autotools-food": {
+   "category": "web",
+   "questions": 22,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "autotools-music": {
+   "category": "web",
+   "questions": 32,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "autotools-weather": {
+   "category": "web",
+   "questions": 11,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "craft-math-algebra": {
+   "category": "code",
+   "questions": 280,
+   "matched_any": 2,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 2,
+   "matched_R3": 0,
+   "train_rows_dropped": 2
+  },
+  "craft-tabmwp": {
+   "category": "code",
+   "questions": 174,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "craft-vqa": {
+   "category": "code",
+   "questions": 200,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "gorilla-huggingface": {
+   "category": "code",
+   "questions": 500,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "gorilla-pytorch": {
+   "category": "code",
+   "questions": 43,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "gorilla-tensor": {
+   "category": "code",
+   "questions": 55,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "gpt4tools": {
+   "category": "customized",
+   "questions": 32,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "gta": {
+   "category": "customized",
+   "questions": 14,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "metatool": {
+   "category": "customized",
+   "questions": 200,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "mnms": {
+   "category": "web",
+   "questions": 33,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "restgpt-spotify": {
+   "category": "web",
+   "questions": 40,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "restgpt-tmdb": {
+   "category": "web",
+   "questions": 54,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "reversechain": {
+   "category": "web",
+   "questions": 200,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "rotbench": {
+   "category": "web",
+   "questions": 550,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "t-eval-dialog": {
+   "category": "web",
+   "questions": 50,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "t-eval-step": {
+   "category": "web",
+   "questions": 50,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "taskbench-daily": {
+   "category": "web",
+   "questions": 40,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "taskbench-huggingface": {
+   "category": "customized",
+   "questions": 23,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "taskbench-multimedia": {
+   "category": "customized",
+   "questions": 40,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "tool-be-honest": {
+   "category": "customized",
+   "questions": 350,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "toolace": {
+   "category": "web",
+   "questions": 1000,
+   "matched_any": 43,
+   "matched_R1": 2,
+   "matched_R1b": 0,
+   "matched_R2": 34,
+   "matched_R3": 22,
+   "train_rows_dropped": 89
+  },
+  "toolalpaca": {
+   "category": "customized",
+   "questions": 94,
+   "matched_any": 2,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 1,
+   "matched_R3": 1,
+   "train_rows_dropped": 3
+  },
+  "toolbench-sam": {
+   "category": "customized",
+   "questions": 197,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "toolbench": {
+   "category": "web",
+   "questions": 1100,
+   "matched_any": 763,
+   "matched_R1": 744,
+   "matched_R1b": 0,
+   "matched_R2": 763,
+   "matched_R3": 747,
+   "train_rows_dropped": 2268
+  },
+  "toolemu": {
+   "category": "web",
+   "questions": 38,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "tooleyes": {
+   "category": "web",
+   "questions": 95,
+   "matched_any": 1,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 1,
+   "matched_R3": 0,
+   "train_rows_dropped": 5
+  },
+  "toolink": {
+   "category": "code",
+   "questions": 497,
+   "matched_any": 2,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 2,
+   "matched_R3": 0,
+   "train_rows_dropped": 3
+  },
+  "toollens": {
+   "category": "web",
+   "questions": 314,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  },
+  "ultratool": {
+   "category": "web",
+   "questions": 500,
+   "matched_any": 0,
+   "matched_R1": 0,
+   "matched_R1b": 0,
+   "matched_R2": 0,
+   "matched_R3": 0,
+   "train_rows_dropped": 0
+  }
+ }
+}

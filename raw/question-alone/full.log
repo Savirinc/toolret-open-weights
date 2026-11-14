@@ -1,0 +1,39 @@
+bm25s 0.3.16 scipy 1.15.3
+{'corpus': 44453, 'with_category': 44453, 'by_cat': Counter({'web': 37292, 'code': 3794, 'customized': 3367})}
+Fetching 19 files:   0%|          | 0/19 [00:00<?, ?it/s]Fetching 19 files: 100%|██████████| 19/19 [00:00<00:00, 558.97it/s]
+model ok ['.cache', '.gitattributes', 'CONTRIBUTING.md', 'LICENSE', 'README.md', 'THIRD_PARTY_NOTICES.md', '__init__.py', 'chat_template.jinja', 'config.json', 'config_sentence_transformers.json', 'configuration_llama_nemotron_vl.py', 'model.safetensors', 'modeling_llama_nemotron_vl.py', 'modules.json', 'processing_llama_nemotron_vl.py', 'processor_config.json', 'sentence_bert_config.json', 'special_tokens_map.json', 'tokenizer.json', 'tokenizer_config.json']
+NVIDIA A10G, 595.91.07, 23028 MiB
+corpus 44,453 queries 7,961
+pairs to rerank (both pools, all settings): 654,920
+already scored 0; to score 654,920
+Loading weights:   0%|          | 0/601 [00:00<?, ?it/s]Loading weights:  48%|████▊     | 290/601 [00:00<00:00, 2875.89it/s]Loading weights: 100%|██████████| 601/601 [00:00<00:00, 4358.81it/s]
+reranker loaded in 4s; transformers 5.20.0 torch 2.9.1+cu128
+tokens (capped 1024): mean 236, truncated pairs 11,694
+rerank 90,682/654,920 in 301s (302 pairs/s)
+rerank 156,020/654,920 in 601s (260 pairs/s)
+rerank 212,509/654,920 in 902s (236 pairs/s)
+rerank 262,773/654,920 in 1203s (218 pairs/s)
+rerank 308,172/654,920 in 1504s (205 pairs/s)
+rerank 349,346/654,920 in 1804s (194 pairs/s)
+rerank 386,714/654,920 in 2106s (184 pairs/s)
+rerank 420,477/654,920 in 2407s (175 pairs/s)
+rerank 451,253/654,920 in 2708s (167 pairs/s)
+rerank 479,364/654,920 in 3009s (159 pairs/s)
+rerank 505,013/654,920 in 3310s (153 pairs/s)
+rerank 528,509/654,920 in 3611s (146 pairs/s)
+rerank 549,879/654,920 in 3912s (141 pairs/s)
+rerank 569,423/654,920 in 4213s (135 pairs/s)
+rerank 587,109/654,920 in 4515s (130 pairs/s)
+rerank 602,830/654,920 in 4816s (125 pairs/s)
+rerank 616,643/654,920 in 5117s (121 pairs/s)
+rerank 628,692/654,920 in 5418s (116 pairs/s)
+rerank 638,522/654,920 in 5719s (112 pairs/s)
+rerank 645,801/654,920 in 6020s (107 pairs/s)
+rerank 652,473/654,920 in 6321s (103 pairs/s)
+rerank done 654,920 pairs in 6433s
+merged MTEB35 {'dense': 34.72, 'bm25': 22.65, 'fused': 30.75, 'fused_rerank': 42.75, 'union_rerank': 42.62, 'oracle_fused_top60': 63.71} 
+  3cat {'dense': 34.07, 'bm25': 23.13, 'fused': 30.66, 'fused_rerank': 41.96, 'union_rerank': 41.78, 'oracle_fused_top60': 61.22}
+percat MTEB35 {'dense': 39.92, 'bm25': 27.61, 'fused': 36.87, 'fused_rerank': 47.0, 'union_rerank': 46.89, 'oracle_fused_top60': 70.52} 
+  3cat {'dense': 40.58, 'bm25': 29.48, 'fused': 38.42, 'fused_rerank': 47.52, 'union_rerank': 47.4, 'oracle_fused_top60': 70.6}
+SCORED
+EXIT 0

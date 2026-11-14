@@ -1,0 +1,234 @@
+{
+ "benchmark": "MTEB ToolRetrieval (ToolRet, w/o instruction), dataset mteb/ToolRetrieval@76d45e560059754e289ea202462865a585679619",
+ "corpus": 44453,
+ "queries": 7961,
+ "metric": "nDCG@10",
+ "mteb_mean_35_subsets": 34.72,
+ "paper_three_category_mean": 34.06,
+ "category_task_means": {
+  "web": 34.85,
+  "code": 26.54,
+  "customized": 40.81
+ },
+ "category_query_weighted_means": {
+  "web": 42.13,
+  "code": 34.25,
+  "customized": 35.12
+ },
+ "paper_three_category_mean_query_weighted": 37.16,
+ "category_task_counts": {
+  "web": 19,
+  "code": 7,
+  "customized": 9
+ },
+ "scored_zero_not_embedded": [
+  "mnms_query_17"
+ ],
+ "tasks": {
+  "apibank": {
+   "ndcg10": 26.15,
+   "n": 101,
+   "category": "web"
+  },
+  "apigen": {
+   "ndcg10": 65.07,
+   "n": 1000,
+   "category": "web"
+  },
+  "appbench": {
+   "ndcg10": 72.97,
+   "n": 32,
+   "category": "customized"
+  },
+  "autotools-food": {
+   "ndcg10": 49.81,
+   "n": 22,
+   "category": "web"
+  },
+  "autotools-music": {
+   "ndcg10": 47.03,
+   "n": 32,
+   "category": "web"
+  },
+  "autotools-weather": {
+   "ndcg10": 45.92,
+   "n": 11,
+   "category": "web"
+  },
+  "craft-math-algebra": {
+   "ndcg10": 73.3,
+   "n": 280,
+   "category": "code"
+  },
+  "craft-tabmwp": {
+   "ndcg10": 11.6,
+   "n": 174,
+   "category": "code"
+  },
+  "craft-vqa": {
+   "ndcg10": 21.01,
+   "n": 200,
+   "category": "code"
+  },
+  "gorilla-huggingface": {
+   "ndcg10": 17.11,
+   "n": 500,
+   "category": "code"
+  },
+  "gorilla-pytorch": {
+   "ndcg10": 10.16,
+   "n": 43,
+   "category": "code"
+  },
+  "gorilla-tensor": {
+   "ndcg10": 4.44,
+   "n": 55,
+   "category": "code"
+  },
+  "gpt4tools": {
+   "ndcg10": 75.85,
+   "n": 32,
+   "category": "customized"
+  },
+  "gta": {
+   "ndcg10": 0.0,
+   "n": 14,
+   "category": "customized"
+  },
+  "metatool": {
+   "ndcg10": 32.09,
+   "n": 200,
+   "category": "customized"
+  },
+  "mnms": {
+   "ndcg10": 20.88,
+   "n": 33,
+   "category": "web"
+  },
+  "restgpt-spotify": {
+   "ndcg10": 46.1,
+   "n": 40,
+   "category": "web"
+  },
+  "restgpt-tmdb": {
+   "ndcg10": 38.27,
+   "n": 54,
+   "category": "web"
+  },
+  "reversechain": {
+   "ndcg10": 29.04,
+   "n": 200,
+   "category": "web"
+  },
+  "rotbench": {
+   "ndcg10": 8.32,
+   "n": 550,
+   "category": "web"
+  },
+  "t-eval-dialog": {
+   "ndcg10": 28.13,
+   "n": 50,
+   "category": "web"
+  },
+  "t-eval-step": {
+   "ndcg10": 29.59,
+   "n": 50,
+   "category": "web"
+  },
+  "taskbench-daily": {
+   "ndcg10": 43.03,
+   "n": 40,
+   "category": "web"
+  },
+  "taskbench-huggingface": {
+   "ndcg10": 28.58,
+   "n": 23,
+   "category": "customized"
+  },
+  "taskbench-multimedia": {
+   "ndcg10": 62.4,
+   "n": 40,
+   "category": "customized"
+  },
+  "tool-be-honest": {
+   "ndcg10": 41.36,
+   "n": 350,
+   "category": "customized"
+  },
+  "toolace": {
+   "ndcg10": 61.38,
+   "n": 1000,
+   "category": "web"
+  },
+  "toolalpaca": {
+   "ndcg10": 48.17,
+   "n": 94,
+   "category": "customized"
+  },
+  "toolbench": {
+   "ndcg10": 38.38,
+   "n": 1100,
+   "category": "web"
+  },
+  "toolbench-sam": {
+   "ndcg10": 5.83,
+   "n": 197,
+   "category": "customized"
+  },
+  "toolemu": {
+   "ndcg10": 11.12,
+   "n": 38,
+   "category": "web"
+  },
+  "tooleyes": {
+   "ndcg10": 22.46,
+   "n": 95,
+   "category": "web"
+  },
+  "toolink": {
+   "ndcg10": 48.13,
+   "n": 497,
+   "category": "code"
+  },
+  "toollens": {
+   "ndcg10": 10.61,
+   "n": 314,
+   "category": "web"
+  },
+  "ultratool": {
+   "ndcg10": 40.89,
+   "n": 500,
+   "category": "web"
+  }
+ },
+ "score_seconds": 5.5,
+ "tr-corpus.meta": {
+  "name": "corpus",
+  "rows": 44453,
+  "embedded": 44453,
+  "empty_skipped": 0,
+  "failed": [],
+  "seconds": 573.6
+ },
+ "tr-queries.meta": {
+  "name": "queries",
+  "rows": 7961,
+  "embedded": 7960,
+  "empty_skipped": 1,
+  "failed": [],
+  "seconds": 52.8
+ },
+ "tr-server": {
+  "object": "list",
+  "data": [
+   {
+    "id": "nvidia/Nemotron-3.5-Embed-1B-BF16",
+    "object": "model",
+    "owned_by": "nvidia",
+    "root": "nvidia/Nemotron-3.5-Embed-1B-BF16@e24ca1e346bcc53572bd7bdc02b3e8ebf66c197c",
+    "backend": "open"
+   }
+  ]
+ },
+ "rounding_note": "12 Nov 2026 correction: category means were rounded to 2 places before the three-category mean was taken. Values recomputed from the raw run files without that intermediate rounding; changed entries: paper_three_category_mean 34.07 -> 34.06; paper_three_category_mean_query_weighted 37.17 -> 37.16"
+}

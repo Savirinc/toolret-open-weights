@@ -1,0 +1,1244 @@
+{
+ "about": "Single source for every ToolRet number (blog, public README, paper). nDCG@10, 0-100. Ours recomputed from raw run files without intermediate rounding.",
+ "data": {
+  "benchmark": "mteb/ToolRetrieval@76d45e560059754e289ea202462865a585679619",
+  "questions": 7961,
+  "tools": 44453,
+  "subsets": 35,
+  "tool_categories": "mangopy/ToolRet-Tools@e06c38c75612b6536bd959e08cdd345894aba6a7",
+  "instructions": "mangopy/ToolRet-Queries@b8c76ad3349ff17497b6bdb28bb5b8f61a0f6445 (identical to the MTEB instruction column for all 7,961)",
+  "paper_prints": {
+   "questions": 7615,
+   "tools": 43215,
+   "note": "no public release with these counts was found; see sensitivity_checks"
+  }
+ },
+ "models": {
+  "embedder": "nvidia/Nemotron-3.5-Embed-1B-BF16@e24ca1e346bcc53572bd7bdc02b3e8ebf66c197c",
+  "reranker": "nvidia/llama-nemotron-rerank-vl-1b-v2@b8a9987b05b75db5ad949c825cbcbf6eb7c48b5a"
+ },
+ "headlines": {
+  "question_alone|all_tools|fused_top60_rerank": 41.96,
+  "question_alone|per_category|fused_top60_rerank": 47.52,
+  "with_instruction|all_tools|fused_top60_rerank": 55.33,
+  "with_instruction|per_category|fused_top60_rerank": 61.13
+ },
+ "ours": {
+  "question_alone|all_tools|meaning_only": {
+   "task_mean_3cat": 34.06,
+   "query_weighted_3cat": 37.16,
+   "pooled_all_questions": 39.53,
+   "mteb_mean_35": 34.72
+  },
+  "question_alone|all_tools|bm25_only": {
+   "task_mean_3cat": 23.13,
+   "query_weighted_3cat": 27.44,
+   "pooled_all_questions": 30.79,
+   "mteb_mean_35": 22.65
+  },
+  "question_alone|all_tools|fused_rrf60": {
+   "task_mean_3cat": 30.66,
+   "query_weighted_3cat": 34.99,
+   "pooled_all_questions": 38.49,
+   "mteb_mean_35": 30.75
+  },
+  "question_alone|all_tools|fused_top60_rerank": {
+   "task_mean_3cat": 41.96,
+   "query_weighted_3cat": 43.77,
+   "pooled_all_questions": 47.58,
+   "mteb_mean_35": 42.75
+  },
+  "question_alone|all_tools|production_pool60_rerank": {
+   "task_mean_3cat": 41.78,
+   "query_weighted_3cat": 43.69,
+   "pooled_all_questions": 47.52,
+   "mteb_mean_35": 42.62
+  },
+  "question_alone|per_category|meaning_only": {
+   "task_mean_3cat": 40.58,
+   "query_weighted_3cat": 43.32,
+   "pooled_all_questions": 43.32,
+   "mteb_mean_35": 39.92
+  },
+  "question_alone|per_category|bm25_only": {
+   "task_mean_3cat": 29.48,
+   "query_weighted_3cat": 33.15,
+   "pooled_all_questions": 34.01,
+   "mteb_mean_35": 27.61
+  },
+  "question_alone|per_category|fused_rrf60": {
+   "task_mean_3cat": 38.42,
+   "query_weighted_3cat": 41.5,
+   "pooled_all_questions": 42.14,
+   "mteb_mean_35": 36.87
+  },
+  "question_alone|per_category|fused_top60_rerank": {
+   "task_mean_3cat": 47.52,
+   "query_weighted_3cat": 50.35,
+   "pooled_all_questions": 51.19,
+   "mteb_mean_35": 47.0
+  },
+  "question_alone|per_category|production_pool60_rerank": {
+   "task_mean_3cat": 47.4,
+   "query_weighted_3cat": 50.15,
+   "pooled_all_questions": 51.0,
+   "mteb_mean_35": 46.89
+  },
+  "with_instruction|all_tools|meaning_only": {
+   "task_mean_3cat": 52.46,
+   "query_weighted_3cat": 53.13,
+   "pooled_all_questions": 53.45,
+   "mteb_mean_35": 50.68
+  },
+  "with_instruction|all_tools|bm25_only": {
+   "task_mean_3cat": 36.67,
+   "query_weighted_3cat": 39.23,
+   "pooled_all_questions": 40.94,
+   "mteb_mean_35": 33.9
+  },
+  "with_instruction|all_tools|fused_rrf60": {
+   "task_mean_3cat": 46.94,
+   "query_weighted_3cat": 48.44,
+   "pooled_all_questions": 49.8,
+   "mteb_mean_35": 44.4
+  },
+  "with_instruction|all_tools|fused_top60_rerank": {
+   "task_mean_3cat": 55.33,
+   "query_weighted_3cat": 56.17,
+   "pooled_all_questions": 57.73,
+   "mteb_mean_35": 53.65
+  },
+  "with_instruction|all_tools|fused_top100_rerank": {
+   "task_mean_3cat": 55.26,
+   "query_weighted_3cat": 56.11,
+   "pooled_all_questions": 57.67,
+   "mteb_mean_35": 53.47
+  },
+  "with_instruction|all_tools|production_pool60_rerank": {
+   "task_mean_3cat": 55.54,
+   "query_weighted_3cat": 56.24,
+   "pooled_all_questions": 57.77,
+   "mteb_mean_35": 53.93
+  },
+  "with_instruction|per_category|meaning_only": {
+   "task_mean_3cat": 57.74,
+   "query_weighted_3cat": 58.3,
+   "pooled_all_questions": 56.67,
+   "mteb_mean_35": 55.41
+  },
+  "with_instruction|per_category|bm25_only": {
+   "task_mean_3cat": 43.53,
+   "query_weighted_3cat": 45.75,
+   "pooled_all_questions": 44.54,
+   "mteb_mean_35": 39.48
+  },
+  "with_instruction|per_category|fused_rrf60": {
+   "task_mean_3cat": 53.39,
+   "query_weighted_3cat": 54.59,
+   "pooled_all_questions": 53.16,
+   "mteb_mean_35": 49.81
+  },
+  "with_instruction|per_category|fused_top60_rerank": {
+   "task_mean_3cat": 61.13,
+   "query_weighted_3cat": 61.49,
+   "pooled_all_questions": 60.81,
+   "mteb_mean_35": 58.48
+  },
+  "with_instruction|per_category|fused_top100_rerank": {
+   "task_mean_3cat": 60.92,
+   "query_weighted_3cat": 61.32,
+   "pooled_all_questions": 60.76,
+   "mteb_mean_35": 58.12
+  },
+  "with_instruction|per_category|production_pool60_rerank": {
+   "task_mean_3cat": 61.26,
+   "query_weighted_3cat": 61.59,
+   "pooled_all_questions": 60.83,
+   "mteb_mean_35": 58.63
+  },
+  "question_alone|per_source_dataset|meaning_only": {
+   "task_mean_3cat": 61.71,
+   "query_weighted_3cat": 55.7,
+   "pooled_all_questions": 58.34,
+   "mteb_mean_35": 63.55
+  },
+  "question_alone|per_source_dataset|bm25_only": {
+   "task_mean_3cat": 48.5,
+   "query_weighted_3cat": 43.26,
+   "pooled_all_questions": 46.28,
+   "mteb_mean_35": 50.14
+  },
+  "question_alone|per_source_dataset|fused_rrf60": {
+   "task_mean_3cat": 57.7,
+   "query_weighted_3cat": 52.43,
+   "pooled_all_questions": 55.54,
+   "mteb_mean_35": 59.65
+  },
+  "question_alone|per_source_dataset|fused_top60_rerank": {
+   "task_mean_3cat": 66.53,
+   "query_weighted_3cat": 61.11,
+   "pooled_all_questions": 64.32,
+   "mteb_mean_35": 68.29
+  },
+  "question_alone|per_source_dataset|production_pool60_rerank": {
+   "task_mean_3cat": 66.59,
+   "query_weighted_3cat": 61.11,
+   "pooled_all_questions": 64.34,
+   "mteb_mean_35": 68.34
+  },
+  "with_instruction|per_source_dataset|meaning_only": {
+   "task_mean_3cat": 74.08,
+   "query_weighted_3cat": 68.84,
+   "pooled_all_questions": 69.34,
+   "mteb_mean_35": 74.52
+  },
+  "with_instruction|per_source_dataset|bm25_only": {
+   "task_mean_3cat": 60.45,
+   "query_weighted_3cat": 54.9,
+   "pooled_all_questions": 56.11,
+   "mteb_mean_35": 60.79
+  },
+  "with_instruction|per_source_dataset|fused_rrf60": {
+   "task_mean_3cat": 70.15,
+   "query_weighted_3cat": 64.6,
+   "pooled_all_questions": 65.29,
+   "mteb_mean_35": 70.64
+  },
+  "with_instruction|per_source_dataset|fused_top60_rerank": {
+   "task_mean_3cat": 75.95,
+   "query_weighted_3cat": 70.3,
+   "pooled_all_questions": 72.16,
+   "mteb_mean_35": 76.48
+  },
+  "with_instruction|per_source_dataset|production_pool60_rerank": {
+   "task_mean_3cat": 76.01,
+   "query_weighted_3cat": 70.41,
+   "pooled_all_questions": 72.19,
+   "mteb_mean_35": 76.52
+  }
+ },
+ "comparisons": [
+  {
+   "value": 35.51,
+   "system": "bge-reranker-v2-gemma (over NV-Embed-v1 candidates)",
+   "source": "ToolRet paper (arXiv 2503.01763) Table 4, identical in v1 and v2",
+   "setting": "query only, all tools",
+   "trained_on_toolret_data": false,
+   "note": "best in Table 4"
+  },
+  {
+   "value": 33.83,
+   "system": "NV-Embed-v1",
+   "source": "ToolRet paper Table 4, v1 and v2",
+   "setting": "query only, all tools",
+   "trained_on_toolret_data": false,
+   "note": "best embedder in Table 4"
+  },
+  {
+   "value": 36.41,
+   "system": "CallBus-emb-8B v0.2 (toolrank-emb-8b)",
+   "source": "github.com/mangopy/tool-retrieval-benchmark issue 19 (w/ meta w/o inst, Avg 0.3641)",
+   "setting": "query only, all tools",
+   "trained_on_toolret_data": true,
+   "note": "not on the leaderboard as of 12 Nov 2026"
+  },
+  {
+   "value": 35.5,
+   "system": "NV-Embed-v1",
+   "source": "ToolRet authors' leaderboard (Space mangopy/ToolRet-leaderboard@f4ecde5), w/ meta w/o inst, All",
+   "setting": "query only, corpus not stated",
+   "trained_on_toolret_data": false,
+   "note": ""
+  },
+  {
+   "value": 42.36,
+   "system": "bge-reranker-v2-gemma",
+   "source": "ToolRet paper App. D.4 Table 13, v1 and v2 (caption says w/ inst., text says w/o inst.)",
+   "setting": "query only, per category",
+   "trained_on_toolret_data": false,
+   "note": ""
+  },
+  {
+   "value": 46.53,
+   "system": "ToolDreamer Qwen3 QTND + GPT-4.1 fusion",
+   "source": "ToolDreamer (arXiv 2510.19791 v2) Table 4",
+   "setting": "question + GPT-4.1 hypothetical tools, per category, filtered test set",
+   "trained_on_toolret_data": true,
+   "note": ""
+  },
+  {
+   "value": 42.47,
+   "system": "ToolDreamer Qwen3 QTND + RRF",
+   "source": "ToolDreamer (arXiv 2510.19791 v2) Tables 1 and 4",
+   "setting": "question + GPT-4.1 hypothetical tools, per category, filtered test set",
+   "trained_on_toolret_data": true,
+   "note": ""
+  },
+  {
+   "value": 59.9,
+   "system": "MagicSelector: Ours-Decomp + Ours-Rerank-4B",
+   "source": "MagicSelector (arXiv 2607.17751 v2) Tables 1 and 5",
+   "setting": "with instruction, all tools; mean of 3 domains",
+   "trained_on_toolret_data": true,
+   "note": "trained on 10K ToolRet web instances; 3.1K web test samples have training tools"
+  },
+  {
+   "value": 59.44,
+   "system": "MagicSelector: Ours-Embedding-4B + Ours-Rerank-4B",
+   "source": "MagicSelector Table 1",
+   "setting": "with instruction, all tools",
+   "trained_on_toolret_data": true,
+   "note": ""
+  },
+  {
+   "value": 57.01,
+   "system": "Tool-DE-Embed-4B + Tool-DE-Rerank-4B (as run by MagicSelector)",
+   "source": "MagicSelector Table 5",
+   "setting": "with instruction, all tools",
+   "trained_on_toolret_data": true,
+   "note": ""
+  },
+  {
+   "value": 59.36,
+   "system": "CallBus-emb-8B v0.2 + Qwen3-Reranker-8B over its top 20",
+   "source": "model card yasinyaman/callbus-emb-8b@05ad3da ('micro')",
+   "setting": "with instruction, all tools; POOLED over all questions",
+   "trained_on_toolret_data": true,
+   "note": "category mean 54.35"
+  },
+  {
+   "value": 54.36,
+   "system": "CallBus-emb-8B v0.2",
+   "source": "issue 19 (w/ meta w/ inst, Avg 0.5436)",
+   "setting": "with instruction, all tools; category mean, micro within task",
+   "trained_on_toolret_data": true,
+   "note": ""
+  },
+  {
+   "value": 51.39,
+   "system": "E5-Mistral-7B-Instruct + Qwen3-Reranker-8B",
+   "source": "MagicSelector Tables 1 and 5",
+   "setting": "with instruction, all tools",
+   "trained_on_toolret_data": false,
+   "note": "best figure found from a system not trained on ToolRet data"
+  },
+  {
+   "value": 51.21,
+   "system": "Tool-Embed-original-4B + Tool-Rank-original-4B (top 100)",
+   "source": "Tool-DE (arXiv 2510.22670 v1) Table 3, ToolRet block",
+   "setting": "with instruction (inferred), all tools (inferred)",
+   "trained_on_toolret_data": true,
+   "note": ""
+  },
+  {
+   "value": 47.52,
+   "system": "bge-reranker-v2-gemma",
+   "source": "ToolRet paper Table 5, v1 and v2",
+   "setting": "with instruction, all tools",
+   "trained_on_toolret_data": false,
+   "note": ""
+  },
+  {
+   "value": 45.73,
+   "system": "jina-reranker-v2-base-multilingual",
+   "source": "ToolRet authors' leaderboard, w/ meta w/ inst, All",
+   "setting": "with instruction, corpus not stated",
+   "trained_on_toolret_data": false,
+   "note": ""
+  },
+  {
+   "value": 54.76,
+   "system": "bge-reranker-v2-gemma",
+   "source": "ToolRet paper App. D.4 Table 12, v1 and v2",
+   "setting": "with instruction, per category",
+   "trained_on_toolret_data": false,
+   "note": ""
+  },
+  {
+   "value": 74.14,
+   "system": "bge-reranker-v2-gemma",
+   "source": "ToolRet paper App. D.3 Table 10, v1 and v2",
+   "setting": "FIFTH SETTING: with instruction, each question's own source dataset",
+   "trained_on_toolret_data": false,
+   "note": "not comparable with the four settings above"
+  },
+  {
+   "value": 62.05,
+   "system": "bge-reranker-v2-gemma",
+   "source": "ToolRet paper App. D.3 Table 11, v1 and v2",
+   "setting": "FIFTH SETTING: query only, each question's own source dataset",
+   "trained_on_toolret_data": false,
+   "note": "not comparable with the four settings above"
+  },
+  {
+   "value": 68.3,
+   "system": "NV-Embed-v1",
+   "source": "ToolRet paper App. D.3 Table 10, v1 and v2",
+   "setting": "FIFTH SETTING: with instruction, each question's own source dataset",
+   "trained_on_toolret_data": false,
+   "note": ""
+  },
+  {
+   "value": 59.72,
+   "system": "NV-Embed-v1",
+   "source": "ToolRet paper App. D.3 Table 11, v1 and v2",
+   "setting": "FIFTH SETTING: query only, each question's own source dataset",
+   "trained_on_toolret_data": false,
+   "note": ""
+  },
+  {
+   "value": 50.08,
+   "system": "BM25S",
+   "source": "ToolRet paper App. D.3 Table 11, v1 and v2",
+   "setting": "FIFTH SETTING: query only, each question's own source dataset",
+   "trained_on_toolret_data": false,
+   "note": "sanity check for our BM25"
+  }
+ ],
+ "sensitivity_checks": {
+  "what": "subset-removal: drop whole source datasets (questions and tools) to approach the paper's printed counts; scored from raw files",
+  "caveat": "dropped tools are removed from candidate lists; replacements below the scored depth were never scored, so some candidate lists are shorter (question-alone run)",
+  "results": {
+   "query-only top60 | full release": {
+    "merged": {
+     "questions": 7961,
+     "tools": 44453,
+     "tasks": 35,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 34.7189,
+      "task3": 34.0636,
+      "qw3": 37.1648,
+      "pooled": 39.5325
+     },
+     "rerank": {
+      "mteb": 42.7532,
+      "task3": 41.9606,
+      "qw3": 43.7673,
+      "pooled": 47.578
+     }
+    },
+    "percat": {
+     "questions": 7961,
+     "tools": 44453,
+     "tasks": 35,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 39.9171,
+      "task3": 40.5802,
+      "qw3": 43.3238,
+      "pooled": 43.3189
+     },
+     "rerank": {
+      "mteb": 46.9963,
+      "task3": 47.5166,
+      "qw3": 50.3487,
+      "pooled": 51.1949
+     }
+    }
+   },
+   "query-only top60 | minus toollens": {
+    "merged": {
+     "questions": 7647,
+     "tools": 44139,
+     "tasks": 34,
+     "short_candidate_lists": 661,
+     "meaning": {
+      "mteb": 35.4482,
+      "task3": 34.5257,
+      "qw3": 37.8679,
+      "pooled": 40.7801
+     },
+     "rerank": {
+      "mteb": 43.4509,
+      "task3": 42.4073,
+      "qw3": 44.4787,
+      "pooled": 48.7438
+     }
+    },
+    "percat": {
+     "questions": 7647,
+     "tools": 44139,
+     "tasks": 34,
+     "short_candidate_lists": 1042,
+     "meaning": {
+      "mteb": 40.7856,
+      "task3": 41.0691,
+      "qw3": 44.0485,
+      "pooled": 44.707
+     },
+     "rerank": {
+      "mteb": 47.7744,
+      "task3": 47.9536,
+      "qw3": 51.0497,
+      "pooled": 52.4964
+     }
+    }
+   },
+   "query-only top60 | minus toollens + appbench": {
+    "merged": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 973,
+     "meaning": {
+      "mteb": 34.3507,
+      "task3": 33.211,
+      "qw3": 37.4716,
+      "pooled": 40.6951
+     },
+     "rerank": {
+      "mteb": 42.4807,
+      "task3": 41.2675,
+      "qw3": 44.0901,
+      "pooled": 48.6625
+     }
+    },
+    "percat": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 1290,
+     "meaning": {
+      "mteb": 39.5981,
+      "task3": 39.8929,
+      "qw3": 43.9381,
+      "pooled": 44.6669
+     },
+     "rerank": {
+      "mteb": 46.6695,
+      "task3": 46.888,
+      "qw3": 50.8592,
+      "pooled": 52.4315
+     }
+    }
+   },
+   "query-only top60 | minus toollens + gpt4tools": {
+    "merged": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 1070,
+     "meaning": {
+      "mteb": 34.477,
+      "task3": 33.3905,
+      "qw3": 37.522,
+      "pooled": 40.7008
+     },
+     "rerank": {
+      "mteb": 42.127,
+      "task3": 40.7928,
+      "qw3": 43.943,
+      "pooled": 48.5822
+     }
+    },
+    "percat": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 1410,
+     "meaning": {
+      "mteb": 39.6848,
+      "task3": 40.0121,
+      "qw3": 43.6767,
+      "pooled": 44.5691
+     },
+     "rerank": {
+      "mteb": 46.5369,
+      "task3": 46.7057,
+      "qw3": 50.6087,
+      "pooled": 52.3377
+     }
+    }
+   },
+   "with-instruction top60 | full release": {
+    "merged": {
+     "questions": 7961,
+     "tools": 44453,
+     "tasks": 35,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 50.6813,
+      "task3": 52.4608,
+      "qw3": 53.1282,
+      "pooled": 53.4458
+     },
+     "rerank": {
+      "mteb": 53.6472,
+      "task3": 55.3296,
+      "qw3": 56.1731,
+      "pooled": 57.7264
+     }
+    },
+    "percat": {
+     "questions": 7961,
+     "tools": 44453,
+     "tasks": 35,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 55.4092,
+      "task3": 57.7387,
+      "qw3": 58.3009,
+      "pooled": 56.6745
+     },
+     "rerank": {
+      "mteb": 58.476,
+      "task3": 61.1336,
+      "qw3": 61.491,
+      "pooled": 60.8137
+     }
+    }
+   },
+   "with-instruction top60 | minus toollens": {
+    "merged": {
+     "questions": 7647,
+     "tools": 44139,
+     "tasks": 34,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 51.8124,
+      "task3": 53.0979,
+      "qw3": 53.9858,
+      "pooled": 55.1568
+     },
+     "rerank": {
+      "mteb": 54.6074,
+      "task3": 55.8776,
+      "qw3": 56.9707,
+      "pooled": 59.2758
+     }
+    },
+    "percat": {
+     "questions": 7647,
+     "tools": 44139,
+     "tasks": 34,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 56.6525,
+      "task3": 58.4201,
+      "qw3": 59.1704,
+      "pooled": 58.4817
+     },
+     "rerank": {
+      "mteb": 59.5637,
+      "task3": 61.7125,
+      "qw3": 62.3041,
+      "pooled": 62.4805
+     }
+    }
+   },
+   "with-instruction top60 | minus toollens + appbench": {
+    "merged": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 51.1149,
+      "task3": 52.2994,
+      "qw3": 53.6628,
+      "pooled": 55.1135
+     },
+     "rerank": {
+      "mteb": 54.3161,
+      "task3": 55.438,
+      "qw3": 56.7667,
+      "pooled": 59.2831
+     }
+    },
+    "percat": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 55.9046,
+      "task3": 57.6903,
+      "qw3": 59.1995,
+      "pooled": 58.5139
+     },
+     "rerank": {
+      "mteb": 58.7666,
+      "task3": 60.8385,
+      "qw3": 61.9713,
+      "pooled": 62.3893
+     }
+    }
+   },
+   "with-instruction top60 | minus toollens + gpt4tools": {
+    "merged": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 50.9041,
+      "task3": 51.8931,
+      "qw3": 53.5356,
+      "pooled": 55.0719
+     },
+     "rerank": {
+      "mteb": 54.0011,
+      "task3": 54.9182,
+      "qw3": 56.5972,
+      "pooled": 59.2291
+     }
+    },
+    "percat": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 55.806,
+      "task3": 57.5547,
+      "qw3": 58.791,
+      "pooled": 58.361
+     },
+     "rerank": {
+      "mteb": 58.7955,
+      "task3": 60.8782,
+      "qw3": 61.9392,
+      "pooled": 62.3773
+     }
+    }
+   },
+   "with-instruction top100 | full release": {
+    "merged": {
+     "questions": 7961,
+     "tools": 44453,
+     "tasks": 35,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 50.6813,
+      "task3": 52.4608,
+      "qw3": 53.1282,
+      "pooled": 53.4458
+     },
+     "rerank": {
+      "mteb": 53.4721,
+      "task3": 55.264,
+      "qw3": 56.1051,
+      "pooled": 57.6677
+     }
+    },
+    "percat": {
+     "questions": 7961,
+     "tools": 44453,
+     "tasks": 35,
+     "short_candidate_lists": 0,
+     "meaning": {
+      "mteb": 55.4092,
+      "task3": 57.7387,
+      "qw3": 58.3009,
+      "pooled": 56.6745
+     },
+     "rerank": {
+      "mteb": 58.1238,
+      "task3": 60.9196,
+      "qw3": 61.3155,
+      "pooled": 60.7585
+     }
+    }
+   },
+   "with-instruction top100 | minus toollens": {
+    "merged": {
+     "questions": 7647,
+     "tools": 44139,
+     "tasks": 34,
+     "short_candidate_lists": 1040,
+     "meaning": {
+      "mteb": 51.8124,
+      "task3": 53.0979,
+      "qw3": 53.9858,
+      "pooled": 55.1568
+     },
+     "rerank": {
+      "mteb": 54.4425,
+      "task3": 55.8173,
+      "qw3": 56.9116,
+      "pooled": 59.2179
+     }
+    },
+    "percat": {
+     "questions": 7647,
+     "tools": 44139,
+     "tasks": 34,
+     "short_candidate_lists": 1864,
+     "meaning": {
+      "mteb": 56.6525,
+      "task3": 58.4201,
+      "qw3": 59.1704,
+      "pooled": 58.4817
+     },
+     "rerank": {
+      "mteb": 59.2118,
+      "task3": 61.4949,
+      "qw3": 62.1235,
+      "pooled": 62.4149
+     }
+    }
+   },
+   "with-instruction top100 | minus toollens + appbench": {
+    "merged": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 1469,
+     "meaning": {
+      "mteb": 51.1149,
+      "task3": 52.2994,
+      "qw3": 53.6628,
+      "pooled": 55.1135
+     },
+     "rerank": {
+      "mteb": 54.117,
+      "task3": 55.3503,
+      "qw3": 56.6987,
+      "pooled": 59.2203
+     }
+    },
+    "percat": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 2145,
+     "meaning": {
+      "mteb": 55.9046,
+      "task3": 57.6903,
+      "qw3": 59.1995,
+      "pooled": 58.5139
+     },
+     "rerank": {
+      "mteb": 58.4575,
+      "task3": 60.6696,
+      "qw3": 61.8374,
+      "pooled": 62.3443
+     }
+    }
+   },
+   "with-instruction top100 | minus toollens + gpt4tools": {
+    "merged": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 1732,
+     "meaning": {
+      "mteb": 50.9041,
+      "task3": 51.8931,
+      "qw3": 53.5356,
+      "pooled": 55.0719
+     },
+     "rerank": {
+      "mteb": 53.7547,
+      "task3": 54.8012,
+      "qw3": 56.522,
+      "pooled": 59.1494
+     }
+    },
+    "percat": {
+     "questions": 7615,
+     "tools": 44107,
+     "tasks": 33,
+     "short_candidate_lists": 2299,
+     "meaning": {
+      "mteb": 55.806,
+      "task3": 57.5547,
+      "qw3": 58.791,
+      "pooled": 58.361
+     },
+     "rerank": {
+      "mteb": 58.3893,
+      "task3": 60.5759,
+      "qw3": 61.7542,
+      "pooled": 62.3131
+     }
+    }
+   }
+  }
+ },
+ "corrections": [
+  "61.14 -> 61.13 (with instruction, per category, task mean): category means had been rounded before averaging",
+  "also corrected the same way: 34.07 -> 34.06 (11 Nov meaning only), 55.27 -> 55.26 (with instruction, all tools, top 100), 61.31 -> 61.32 and 61.58 -> 61.59 (per category, query-weighted), 41.49 -> 41.50 (question alone, per category, fused, query-weighted), 37.17 -> 37.16 (11 Nov meaning only, query-weighted; unrounded 37.1648), 56.10 -> 56.11 (with instruction, all tools, top 100, query-weighted)"
+ ],
+ "headlines_fifth_setting": {
+  "question_alone|per_source_dataset|fused_top60_rerank": 66.53,
+  "with_instruction|per_source_dataset|fused_top60_rerank": 75.95
+ },
+ "fifth_setting_per_subset": {
+  "question_alone": {
+   "meaning_only": {
+    "apibank": 67.03,
+    "apigen": 83.03,
+    "appbench": 89.69,
+    "autotools-food": 70.95,
+    "autotools-music": 58.98,
+    "autotools-weather": 86.44,
+    "craft-math-algebra": 85.09,
+    "craft-tabmwp": 41.95,
+    "craft-vqa": 45.3,
+    "gorilla-huggingface": 39.39,
+    "gorilla-pytorch": 45.94,
+    "gorilla-tensor": 46.92,
+    "gpt4tools": 88.98,
+    "gta": 51.89,
+    "metatool": 62.37,
+    "mnms": 73.59,
+    "restgpt-spotify": 72.31,
+    "restgpt-tmdb": 61.66,
+    "reversechain": 46.05,
+    "rotbench": 15.88,
+    "t-eval-dialog": 53.31,
+    "t-eval-step": 89.05,
+    "taskbench-daily": 97.16,
+    "taskbench-huggingface": 88.01,
+    "taskbench-multimedia": 89.9,
+    "tool-be-honest": 49.88,
+    "toolace": 70.48,
+    "toolalpaca": 69.82,
+    "toolbench": 59.47,
+    "toolbench-sam": 23.02,
+    "toolemu": 69.56,
+    "tooleyes": 72.51,
+    "toolink": 52.09,
+    "toollens": 50.5,
+    "ultratool": 55.87
+   },
+   "bm25_only": {
+    "apibank": 53.57,
+    "apigen": 77.91,
+    "appbench": 81.55,
+    "autotools-food": 43.26,
+    "autotools-music": 24.95,
+    "autotools-weather": 84.03,
+    "craft-math-algebra": 62.04,
+    "craft-tabmwp": 25.36,
+    "craft-vqa": 52.75,
+    "gorilla-huggingface": 22.21,
+    "gorilla-pytorch": 33.74,
+    "gorilla-tensor": 28.8,
+    "gpt4tools": 64.06,
+    "gta": 42.07,
+    "metatool": 39.63,
+    "mnms": 61.7,
+    "restgpt-spotify": 56.87,
+    "restgpt-tmdb": 38.83,
+    "reversechain": 34.51,
+    "rotbench": 14.06,
+    "t-eval-dialog": 44.61,
+    "t-eval-step": 75.14,
+    "taskbench-daily": 95.31,
+    "taskbench-huggingface": 71.15,
+    "taskbench-multimedia": 80.03,
+    "tool-be-honest": 39.43,
+    "toolace": 60.59,
+    "toolalpaca": 62.1,
+    "toolbench": 39.84,
+    "toolbench-sam": 11.86,
+    "toolemu": 58.82,
+    "tooleyes": 49.52,
+    "toolink": 45.27,
+    "toollens": 44.51,
+    "ultratool": 34.67
+   },
+   "fused_rrf60": {
+    "apibank": 61.11,
+    "apigen": 83.79,
+    "appbench": 88.72,
+    "autotools-food": 60.59,
+    "autotools-music": 44.45,
+    "autotools-weather": 82.4,
+    "craft-math-algebra": 76.66,
+    "craft-tabmwp": 34.42,
+    "craft-vqa": 52.43,
+    "gorilla-huggingface": 31.76,
+    "gorilla-pytorch": 40.59,
+    "gorilla-tensor": 39.0,
+    "gpt4tools": 84.99,
+    "gta": 42.54,
+    "metatool": 55.53,
+    "mnms": 76.94,
+    "restgpt-spotify": 68.5,
+    "restgpt-tmdb": 50.23,
+    "reversechain": 42.49,
+    "rotbench": 16.38,
+    "t-eval-dialog": 51.27,
+    "t-eval-step": 85.47,
+    "taskbench-daily": 98.03,
+    "taskbench-huggingface": 80.06,
+    "taskbench-multimedia": 87.33,
+    "tool-be-honest": 46.23,
+    "toolace": 69.63,
+    "toolalpaca": 69.98,
+    "toolbench": 53.02,
+    "toolbench-sam": 20.93,
+    "toolemu": 69.84,
+    "tooleyes": 65.75,
+    "toolink": 52.18,
+    "toollens": 53.48,
+    "ultratool": 51.1
+   },
+   "fused_top60_rerank": {
+    "apibank": 66.95,
+    "apigen": 86.61,
+    "appbench": 90.48,
+    "autotools-food": 81.44,
+    "autotools-music": 51.9,
+    "autotools-weather": 85.62,
+    "craft-math-algebra": 87.24,
+    "craft-tabmwp": 43.68,
+    "craft-vqa": 57.3,
+    "gorilla-huggingface": 43.12,
+    "gorilla-pytorch": 48.16,
+    "gorilla-tensor": 47.3,
+    "gpt4tools": 95.14,
+    "gta": 70.35,
+    "metatool": 68.76,
+    "mnms": 70.57,
+    "restgpt-spotify": 70.23,
+    "restgpt-tmdb": 62.76,
+    "reversechain": 50.84,
+    "rotbench": 19.27,
+    "t-eval-dialog": 72.26,
+    "t-eval-step": 92.82,
+    "taskbench-daily": 98.22,
+    "taskbench-huggingface": 89.73,
+    "taskbench-multimedia": 94.93,
+    "tool-be-honest": 51.7,
+    "toolace": 79.88,
+    "toolalpaca": 77.14,
+    "toolbench": 69.97,
+    "toolbench-sam": 33.12,
+    "toolemu": 79.25,
+    "tooleyes": 76.6,
+    "toolink": 55.86,
+    "toollens": 57.81,
+    "ultratool": 63.27
+   },
+   "production_pool60_rerank": {
+    "apibank": 67.78,
+    "apigen": 86.7,
+    "appbench": 90.48,
+    "autotools-food": 81.44,
+    "autotools-music": 51.9,
+    "autotools-weather": 85.62,
+    "craft-math-algebra": 87.13,
+    "craft-tabmwp": 45.47,
+    "craft-vqa": 57.14,
+    "gorilla-huggingface": 43.47,
+    "gorilla-pytorch": 48.16,
+    "gorilla-tensor": 47.32,
+    "gpt4tools": 95.14,
+    "gta": 70.35,
+    "metatool": 68.55,
+    "mnms": 70.57,
+    "restgpt-spotify": 70.23,
+    "restgpt-tmdb": 63.13,
+    "reversechain": 51.01,
+    "rotbench": 19.0,
+    "t-eval-dialog": 72.26,
+    "t-eval-step": 92.83,
+    "taskbench-daily": 98.57,
+    "taskbench-huggingface": 89.73,
+    "taskbench-multimedia": 94.93,
+    "tool-be-honest": 52.03,
+    "toolace": 79.7,
+    "toolalpaca": 76.78,
+    "toolbench": 69.76,
+    "toolbench-sam": 31.61,
+    "toolemu": 79.25,
+    "tooleyes": 76.39,
+    "toolink": 56.15,
+    "toollens": 57.77,
+    "ultratool": 63.58
+   }
+  },
+  "with_instruction": {
+   "meaning_only": {
+    "apibank": 75.56,
+    "apigen": 90.07,
+    "appbench": 90.81,
+    "autotools-food": 81.16,
+    "autotools-music": 61.51,
+    "autotools-weather": 89.52,
+    "craft-math-algebra": 97.61,
+    "craft-tabmwp": 73.68,
+    "craft-vqa": 80.15,
+    "gorilla-huggingface": 49.09,
+    "gorilla-pytorch": 51.9,
+    "gorilla-tensor": 52.83,
+    "gpt4tools": 97.69,
+    "gta": 73.05,
+    "metatool": 78.84,
+    "mnms": 84.71,
+    "restgpt-spotify": 79.21,
+    "restgpt-tmdb": 76.91,
+    "reversechain": 61.32,
+    "rotbench": 17.82,
+    "t-eval-dialog": 68.78,
+    "t-eval-step": 93.49,
+    "taskbench-daily": 98.28,
+    "taskbench-huggingface": 89.9,
+    "taskbench-multimedia": 93.42,
+    "tool-be-honest": 51.66,
+    "toolace": 82.21,
+    "toolalpaca": 74.7,
+    "toolbench": 64.49,
+    "toolbench-sam": 52.31,
+    "toolemu": 89.68,
+    "tooleyes": 82.53,
+    "toolink": 81.1,
+    "toollens": 56.02,
+    "ultratool": 66.36
+   },
+   "bm25_only": {
+    "apibank": 66.97,
+    "apigen": 84.92,
+    "appbench": 88.89,
+    "autotools-food": 60.12,
+    "autotools-music": 27.79,
+    "autotools-weather": 85.49,
+    "craft-math-algebra": 90.78,
+    "craft-tabmwp": 57.41,
+    "craft-vqa": 61.99,
+    "gorilla-huggingface": 36.25,
+    "gorilla-pytorch": 45.25,
+    "gorilla-tensor": 45.22,
+    "gpt4tools": 76.02,
+    "gta": 53.09,
+    "metatool": 69.04,
+    "mnms": 70.4,
+    "restgpt-spotify": 56.11,
+    "restgpt-tmdb": 44.3,
+    "reversechain": 52.27,
+    "rotbench": 20.23,
+    "t-eval-dialog": 53.53,
+    "t-eval-step": 79.09,
+    "taskbench-daily": 97.31,
+    "taskbench-huggingface": 74.6,
+    "taskbench-multimedia": 86.56,
+    "tool-be-honest": 43.8,
+    "toolace": 72.27,
+    "toolalpaca": 70.49,
+    "toolbench": 43.22,
+    "toolbench-sam": 22.29,
+    "toolemu": 86.14,
+    "tooleyes": 64.97,
+    "toolink": 53.03,
+    "toollens": 45.68,
+    "ultratool": 42.19
+   },
+   "fused_rrf60": {
+    "apibank": 70.56,
+    "apigen": 89.68,
+    "appbench": 91.04,
+    "autotools-food": 76.49,
+    "autotools-music": 49.84,
+    "autotools-weather": 87.51,
+    "craft-math-algebra": 95.72,
+    "craft-tabmwp": 68.57,
+    "craft-vqa": 77.08,
+    "gorilla-huggingface": 45.45,
+    "gorilla-pytorch": 47.07,
+    "gorilla-tensor": 52.03,
+    "gpt4tools": 94.23,
+    "gta": 69.44,
+    "metatool": 78.4,
+    "mnms": 88.81,
+    "restgpt-spotify": 74.32,
+    "restgpt-tmdb": 62.84,
+    "reversechain": 59.24,
+    "rotbench": 18.95,
+    "t-eval-dialog": 63.05,
+    "t-eval-step": 89.01,
+    "taskbench-daily": 99.49,
+    "taskbench-huggingface": 81.07,
+    "taskbench-multimedia": 91.12,
+    "tool-be-honest": 49.87,
+    "toolace": 79.83,
+    "toolalpaca": 75.43,
+    "toolbench": 56.23,
+    "toolbench-sam": 41.79,
+    "toolemu": 90.43,
+    "tooleyes": 74.87,
+    "toolink": 68.55,
+    "toollens": 56.62,
+    "ultratool": 57.71
+   },
+   "fused_top60_rerank": {
+    "apibank": 74.41,
+    "apigen": 91.23,
+    "appbench": 92.9,
+    "autotools-food": 88.41,
+    "autotools-music": 58.3,
+    "autotools-weather": 85.97,
+    "craft-math-algebra": 97.3,
+    "craft-tabmwp": 77.06,
+    "craft-vqa": 84.15,
+    "gorilla-huggingface": 53.48,
+    "gorilla-pytorch": 51.43,
+    "gorilla-tensor": 61.73,
+    "gpt4tools": 96.54,
+    "gta": 81.28,
+    "metatool": 77.07,
+    "mnms": 80.61,
+    "restgpt-spotify": 76.94,
+    "restgpt-tmdb": 78.55,
+    "reversechain": 64.19,
+    "rotbench": 19.09,
+    "t-eval-dialog": 89.28,
+    "t-eval-step": 92.78,
+    "taskbench-daily": 98.53,
+    "taskbench-huggingface": 90.55,
+    "taskbench-multimedia": 93.82,
+    "tool-be-honest": 51.23,
+    "toolace": 85.63,
+    "toolalpaca": 79.1,
+    "toolbench": 70.98,
+    "toolbench-sam": 41.35,
+    "toolemu": 93.22,
+    "tooleyes": 81.56,
+    "toolink": 82.52,
+    "toollens": 59.05,
+    "ultratool": 76.58
+   },
+   "production_pool60_rerank": {
+    "apibank": 74.24,
+    "apigen": 91.26,
+    "appbench": 92.9,
+    "autotools-food": 88.41,
+    "autotools-music": 58.3,
+    "autotools-weather": 85.97,
+    "craft-math-algebra": 97.3,
+    "craft-tabmwp": 77.02,
+    "craft-vqa": 84.34,
+    "gorilla-huggingface": 53.39,
+    "gorilla-pytorch": 51.43,
+    "gorilla-tensor": 61.73,
+    "gpt4tools": 96.54,
+    "gta": 81.28,
+    "metatool": 78.03,
+    "mnms": 80.63,
+    "restgpt-spotify": 76.94,
+    "restgpt-tmdb": 78.6,
+    "reversechain": 64.01,
+    "rotbench": 19.1,
+    "t-eval-dialog": 89.61,
+    "t-eval-step": 92.84,
+    "taskbench-daily": 98.53,
+    "taskbench-huggingface": 90.55,
+    "taskbench-multimedia": 93.82,
+    "tool-be-honest": 51.43,
+    "toolace": 85.7,
+    "toolalpaca": 79.13,
+    "toolbench": 70.92,
+    "toolbench-sam": 41.92,
+    "toolemu": 92.72,
+    "tooleyes": 81.82,
+    "toolink": 82.48,
+    "toollens": 58.73,
+    "ultratool": 76.42
+   }
+  }
+ }
+}

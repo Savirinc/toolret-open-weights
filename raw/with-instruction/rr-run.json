@@ -1,0 +1,1 @@
+{"rerank_seconds": 16544.4, "pairs": 1036982, "maxlen": 1024, "pairs_cut": 20598, "pairs_cut_share": 0.0199, "mean_tokens_capped": 285.0, "transformers": "5.20.0", "torch": "2.9.1+cu128", "gpu": "NVIDIA L4"}

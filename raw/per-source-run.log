@@ -1,0 +1,37 @@
+NVIDIA L4, 595.91.07
+q: pairs needed 493,868; reused from earlier run 163,676; to score 330,192
+tokens (capped 1024): mean 248, truncated pairs 7,443 of 330,192 (2.25%)
+rerank 63,818/330,192 in 351s
+rerank 107,019/330,192 in 652s
+rerank 142,713/330,192 in 953s
+rerank 173,392/330,192 in 1254s
+rerank 199,733/330,192 in 1555s
+rerank 222,262/330,192 in 1856s
+rerank 241,819/330,192 in 2157s
+rerank 259,178/330,192 in 2458s
+rerank 274,421/330,192 in 2758s
+rerank 288,111/330,192 in 3060s
+rerank 300,003/330,192 in 3361s
+rerank 309,987/330,192 in 3663s
+rerank 318,007/330,192 in 3964s
+rerank 323,666/330,192 in 4265s
+rerank 328,778/330,192 in 4566s
+DONE {'tag': 'q', 'pairs_needed': 493868, 'pairs_reused': 163676, 'pairs_scored': 330192, 'rerank_seconds': 4649.5, 'maxlen': 1024, 'pairs_cut_of_scored': 7443, 'mean_tokens_capped_scored': 248.5, 'transformers': '5.20.0', 'torch': '2.9.1+cu128', 'gpu': 'NVIDIA L4'}
+EXIT q 0
+i: pairs needed 492,098; reused from earlier run 247,119; to score 244,979
+tokens (capped 1024): mean 293, truncated pairs 7,321 of 244,979 (2.99%)
+rerank 45,250/244,979 in 318s
+rerank 79,050/244,979 in 619s
+rerank 107,910/244,979 in 920s
+rerank 133,150/244,979 in 1221s
+rerank 155,017/244,979 in 1522s
+rerank 173,973/244,979 in 1823s
+rerank 190,490/244,979 in 2124s
+rerank 204,646/244,979 in 2424s
+rerank 216,700/244,979 in 2726s
+rerank 226,393/244,979 in 3026s
+rerank 233,802/244,979 in 3327s
+rerank 239,166/244,979 in 3629s
+rerank 244,278/244,979 in 3930s
+DONE {'tag': 'i', 'pairs_needed': 492098, 'pairs_reused': 247119, 'pairs_scored': 244979, 'rerank_seconds': 3972.3, 'maxlen': 1024, 'pairs_cut_of_scored': 7321, 'mean_tokens_capped_scored': 292.7, 'transformers': '5.20.0', 'torch': '2.9.1+cu128', 'gpu': 'NVIDIA L4'}
+EXIT i 0

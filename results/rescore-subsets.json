@@ -1,0 +1,458 @@
+{
+ "query-only top60 | full release": {
+  "merged": {
+   "questions": 7961,
+   "tools": 44453,
+   "tasks": 35,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 34.7189,
+    "task3": 34.0636,
+    "qw3": 37.1648,
+    "pooled": 39.5325
+   },
+   "rerank": {
+    "mteb": 42.7532,
+    "task3": 41.9606,
+    "qw3": 43.7673,
+    "pooled": 47.578
+   }
+  },
+  "percat": {
+   "questions": 7961,
+   "tools": 44453,
+   "tasks": 35,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 39.9171,
+    "task3": 40.5802,
+    "qw3": 43.3238,
+    "pooled": 43.3189
+   },
+   "rerank": {
+    "mteb": 46.9963,
+    "task3": 47.5166,
+    "qw3": 50.3487,
+    "pooled": 51.1949
+   }
+  }
+ },
+ "query-only top60 | minus toollens": {
+  "merged": {
+   "questions": 7647,
+   "tools": 44139,
+   "tasks": 34,
+   "short_candidate_lists": 661,
+   "meaning": {
+    "mteb": 35.4482,
+    "task3": 34.5257,
+    "qw3": 37.8679,
+    "pooled": 40.7801
+   },
+   "rerank": {
+    "mteb": 43.4509,
+    "task3": 42.4073,
+    "qw3": 44.4787,
+    "pooled": 48.7438
+   }
+  },
+  "percat": {
+   "questions": 7647,
+   "tools": 44139,
+   "tasks": 34,
+   "short_candidate_lists": 1042,
+   "meaning": {
+    "mteb": 40.7856,
+    "task3": 41.0691,
+    "qw3": 44.0485,
+    "pooled": 44.707
+   },
+   "rerank": {
+    "mteb": 47.7744,
+    "task3": 47.9536,
+    "qw3": 51.0497,
+    "pooled": 52.4964
+   }
+  }
+ },
+ "query-only top60 | minus toollens + appbench": {
+  "merged": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 973,
+   "meaning": {
+    "mteb": 34.3507,
+    "task3": 33.211,
+    "qw3": 37.4716,
+    "pooled": 40.6951
+   },
+   "rerank": {
+    "mteb": 42.4807,
+    "task3": 41.2675,
+    "qw3": 44.0901,
+    "pooled": 48.6625
+   }
+  },
+  "percat": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 1290,
+   "meaning": {
+    "mteb": 39.5981,
+    "task3": 39.8929,
+    "qw3": 43.9381,
+    "pooled": 44.6669
+   },
+   "rerank": {
+    "mteb": 46.6695,
+    "task3": 46.888,
+    "qw3": 50.8592,
+    "pooled": 52.4315
+   }
+  }
+ },
+ "query-only top60 | minus toollens + gpt4tools": {
+  "merged": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 1070,
+   "meaning": {
+    "mteb": 34.477,
+    "task3": 33.3905,
+    "qw3": 37.522,
+    "pooled": 40.7008
+   },
+   "rerank": {
+    "mteb": 42.127,
+    "task3": 40.7928,
+    "qw3": 43.943,
+    "pooled": 48.5822
+   }
+  },
+  "percat": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 1410,
+   "meaning": {
+    "mteb": 39.6848,
+    "task3": 40.0121,
+    "qw3": 43.6767,
+    "pooled": 44.5691
+   },
+   "rerank": {
+    "mteb": 46.5369,
+    "task3": 46.7057,
+    "qw3": 50.6087,
+    "pooled": 52.3377
+   }
+  }
+ },
+ "with-instruction top60 | full release": {
+  "merged": {
+   "questions": 7961,
+   "tools": 44453,
+   "tasks": 35,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 50.6813,
+    "task3": 52.4608,
+    "qw3": 53.1282,
+    "pooled": 53.4458
+   },
+   "rerank": {
+    "mteb": 53.6472,
+    "task3": 55.3296,
+    "qw3": 56.1731,
+    "pooled": 57.7264
+   }
+  },
+  "percat": {
+   "questions": 7961,
+   "tools": 44453,
+   "tasks": 35,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 55.4092,
+    "task3": 57.7387,
+    "qw3": 58.3009,
+    "pooled": 56.6745
+   },
+   "rerank": {
+    "mteb": 58.476,
+    "task3": 61.1336,
+    "qw3": 61.491,
+    "pooled": 60.8137
+   }
+  }
+ },
+ "with-instruction top60 | minus toollens": {
+  "merged": {
+   "questions": 7647,
+   "tools": 44139,
+   "tasks": 34,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 51.8124,
+    "task3": 53.0979,
+    "qw3": 53.9858,
+    "pooled": 55.1568
+   },
+   "rerank": {
+    "mteb": 54.6074,
+    "task3": 55.8776,
+    "qw3": 56.9707,
+    "pooled": 59.2758
+   }
+  },
+  "percat": {
+   "questions": 7647,
+   "tools": 44139,
+   "tasks": 34,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 56.6525,
+    "task3": 58.4201,
+    "qw3": 59.1704,
+    "pooled": 58.4817
+   },
+   "rerank": {
+    "mteb": 59.5637,
+    "task3": 61.7125,
+    "qw3": 62.3041,
+    "pooled": 62.4805
+   }
+  }
+ },
+ "with-instruction top60 | minus toollens + appbench": {
+  "merged": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 51.1149,
+    "task3": 52.2994,
+    "qw3": 53.6628,
+    "pooled": 55.1135
+   },
+   "rerank": {
+    "mteb": 54.3161,
+    "task3": 55.438,
+    "qw3": 56.7667,
+    "pooled": 59.2831
+   }
+  },
+  "percat": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 55.9046,
+    "task3": 57.6903,
+    "qw3": 59.1995,
+    "pooled": 58.5139
+   },
+   "rerank": {
+    "mteb": 58.7666,
+    "task3": 60.8385,
+    "qw3": 61.9713,
+    "pooled": 62.3893
+   }
+  }
+ },
+ "with-instruction top60 | minus toollens + gpt4tools": {
+  "merged": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 50.9041,
+    "task3": 51.8931,
+    "qw3": 53.5356,
+    "pooled": 55.0719
+   },
+   "rerank": {
+    "mteb": 54.0011,
+    "task3": 54.9182,
+    "qw3": 56.5972,
+    "pooled": 59.2291
+   }
+  },
+  "percat": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 55.806,
+    "task3": 57.5547,
+    "qw3": 58.791,
+    "pooled": 58.361
+   },
+   "rerank": {
+    "mteb": 58.7955,
+    "task3": 60.8782,
+    "qw3": 61.9392,
+    "pooled": 62.3773
+   }
+  }
+ },
+ "with-instruction top100 | full release": {
+  "merged": {
+   "questions": 7961,
+   "tools": 44453,
+   "tasks": 35,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 50.6813,
+    "task3": 52.4608,
+    "qw3": 53.1282,
+    "pooled": 53.4458
+   },
+   "rerank": {
+    "mteb": 53.4721,
+    "task3": 55.264,
+    "qw3": 56.1051,
+    "pooled": 57.6677
+   }
+  },
+  "percat": {
+   "questions": 7961,
+   "tools": 44453,
+   "tasks": 35,
+   "short_candidate_lists": 0,
+   "meaning": {
+    "mteb": 55.4092,
+    "task3": 57.7387,
+    "qw3": 58.3009,
+    "pooled": 56.6745
+   },
+   "rerank": {
+    "mteb": 58.1238,
+    "task3": 60.9196,
+    "qw3": 61.3155,
+    "pooled": 60.7585
+   }
+  }
+ },
+ "with-instruction top100 | minus toollens": {
+  "merged": {
+   "questions": 7647,
+   "tools": 44139,
+   "tasks": 34,
+   "short_candidate_lists": 1040,
+   "meaning": {
+    "mteb": 51.8124,
+    "task3": 53.0979,
+    "qw3": 53.9858,
+    "pooled": 55.1568
+   },
+   "rerank": {
+    "mteb": 54.4425,
+    "task3": 55.8173,
+    "qw3": 56.9116,
+    "pooled": 59.2179
+   }
+  },
+  "percat": {
+   "questions": 7647,
+   "tools": 44139,
+   "tasks": 34,
+   "short_candidate_lists": 1864,
+   "meaning": {
+    "mteb": 56.6525,
+    "task3": 58.4201,
+    "qw3": 59.1704,
+    "pooled": 58.4817
+   },
+   "rerank": {
+    "mteb": 59.2118,
+    "task3": 61.4949,
+    "qw3": 62.1235,
+    "pooled": 62.4149
+   }
+  }
+ },
+ "with-instruction top100 | minus toollens + appbench": {
+  "merged": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 1469,
+   "meaning": {
+    "mteb": 51.1149,
+    "task3": 52.2994,
+    "qw3": 53.6628,
+    "pooled": 55.1135
+   },
+   "rerank": {
+    "mteb": 54.117,
+    "task3": 55.3503,
+    "qw3": 56.6987,
+    "pooled": 59.2203
+   }
+  },
+  "percat": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 2145,
+   "meaning": {
+    "mteb": 55.9046,
+    "task3": 57.6903,
+    "qw3": 59.1995,
+    "pooled": 58.5139
+   },
+   "rerank": {
+    "mteb": 58.4575,
+    "task3": 60.6696,
+    "qw3": 61.8374,
+    "pooled": 62.3443
+   }
+  }
+ },
+ "with-instruction top100 | minus toollens + gpt4tools": {
+  "merged": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 1732,
+   "meaning": {
+    "mteb": 50.9041,
+    "task3": 51.8931,
+    "qw3": 53.5356,
+    "pooled": 55.0719
+   },
+   "rerank": {
+    "mteb": 53.7547,
+    "task3": 54.8012,
+    "qw3": 56.522,
+    "pooled": 59.1494
+   }
+  },
+  "percat": {
+   "questions": 7615,
+   "tools": 44107,
+   "tasks": 33,
+   "short_candidate_lists": 2299,
+   "meaning": {
+    "mteb": 55.806,
+    "task3": 57.5547,
+    "qw3": 58.791,
+    "pooled": 58.361
+   },
+   "rerank": {
+    "mteb": 58.3893,
+    "task3": 60.5759,
+    "qw3": 61.7542,
+    "pooled": 62.3131
+   }
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{'queries': 7961, 'missing_instruction': 0, 'query_text_differs_from_toolret': 0}
+
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]
+Fetching 13 files: 100%|██████████| 13/13 [00:00<00:00, 1381.10it/s]
+weights nvidia/Nemotron-3.5-Embed-1B-BF16 e24ca1e at ./hf-cache/hub/models--nvidia--Nemotron-3.5-Embed-1B-BF16/snapshots/e24ca1e346bcc53572bd7bdc02b3e8ebf66c197c
+embed (open) ready on :8000; port without a server for 40 s · gpu 3164 MiB, 23034 MiB
+queries: 256/7,961 in 2s
+queries: 5,376/7,961 in 39s
+{'name': 'queries', 'rows': 7961, 'embedded': 7961, 'empty_skipped': 0, 'failed': [], 'seconds': 70.0}
+corpus exists, skipped
+DONE
+NVIDIA L4, 595.91.07, 0 MiB
+corpus 44,453 queries 7,961
+stage1 merged/all: pool 44,453, 7,961 queries, 18s
+stage1 percat/web: pool 37,292, 5,230 queries, 12s
+stage1 percat/code: pool 3,794, 1,749 queries, 13s
+stage1 percat/customized: pool 3,367, 982 queries, 14s
+pairs to rerank (both pools, all settings): 1,036,982
+already scored 0; to score 1,036,982
+
+Loading weights:   0%|          | 0/601 [00:00<?, ?it/s]
+Loading weights:  15%|█▍        | 89/601 [00:00<00:00, 859.33it/s]
+Loading weights:  30%|██▉       | 178/601 [00:00<00:00, 863.18it/s]
+Loading weights:  55%|█████▌    | 331/601 [00:00<00:00, 1140.13it/s]
+Loading weights:  77%|███████▋  | 463/601 [00:00<00:00, 1187.58it/s]
+Loading weights: 100%|██████████| 601/601 [00:00<00:00, 1175.17it/s]
+reranker loaded in 27s; transformers 5.20.0 torch 2.9.1+cu128
+tokens (capped 1024): mean 285, truncated pairs 20,598 of 1,036,982 (1.99%)
+rerank 54,889/1,036,982 in 300s (183 pairs/s)
+rerank 97,944/1,036,982 in 601s (163 pairs/s)
+rerank 137,010/1,036,982 in 902s (152 pairs/s)
+rerank 173,777/1,036,982 in 1203s (145 pairs/s)
+rerank 208,734/1,036,982 in 1504s (139 pairs/s)
+rerank 242,216/1,036,982 in 1805s (134 pairs/s)
+rerank 274,271/1,036,982 in 2105s (130 pairs/s)
+rerank 305,204/1,036,982 in 2406s (127 pairs/s)
+rerank 335,248/1,036,982 in 2708s (124 pairs/s)
+rerank 364,227/1,036,982 in 3009s (121 pairs/s)
+rerank 392,300/1,036,982 in 3310s (119 pairs/s)
+rerank 419,644/1,036,982 in 3612s (116 pairs/s)
+rerank 446,179/1,036,982 in 3913s (114 pairs/s)
+rerank 471,822/1,036,982 in 4214s (112 pairs/s)
+rerank 496,764/1,036,982 in 4514s (110 pairs/s)
+rerank 520,966/1,036,982 in 4815s (108 pairs/s)
+rerank 544,487/1,036,982 in 5117s (106 pairs/s)
+rerank 567,281/1,036,982 in 5417s (105 pairs/s)
+rerank 589,423/1,036,982 in 5718s (103 pairs/s)
+rerank 610,929/1,036,982 in 6020s (101 pairs/s)
+rerank 631,451/1,036,982 in 6321s (100 pairs/s)
+rerank 651,315/1,036,982 in 6622s (98 pairs/s)
+rerank 670,672/1,036,982 in 6924s (97 pairs/s)
+rerank 689,496/1,036,982 in 7225s (95 pairs/s)
+rerank 707,694/1,036,982 in 7526s (94 pairs/s)
+rerank 725,392/1,036,982 in 7828s (93 pairs/s)
+rerank 742,608/1,036,982 in 8129s (91 pairs/s)
+rerank 759,331/1,036,982 in 8431s (90 pairs/s)
+rerank 775,644/1,036,982 in 8732s (89 pairs/s)
+rerank 791,436/1,036,982 in 9034s (88 pairs/s)
+rerank 806,927/1,036,982 in 9336s (86 pairs/s)
+rerank 821,754/1,036,982 in 9637s (85 pairs/s)
+rerank 836,292/1,036,982 in 9939s (84 pairs/s)
+rerank 850,414/1,036,982 in 10241s (83 pairs/s)
+rerank 863,995/1,036,982 in 10542s (82 pairs/s)
+rerank 877,060/1,036,982 in 10843s (81 pairs/s)
+rerank 889,770/1,036,982 in 11144s (80 pairs/s)
+rerank 902,100/1,036,982 in 11445s (79 pairs/s)
+rerank 914,077/1,036,982 in 11747s (78 pairs/s)
+rerank 925,586/1,036,982 in 12049s (77 pairs/s)
+rerank 936,693/1,036,982 in 12350s (76 pairs/s)
+rerank 947,294/1,036,982 in 12652s (75 pairs/s)
+rerank 957,409/1,036,982 in 12953s (74 pairs/s)
+rerank 966,999/1,036,982 in 13255s (73 pairs/s)
+rerank 976,120/1,036,982 in 13556s (72 pairs/s)
+rerank 984,789/1,036,982 in 13858s (71 pairs/s)
+rerank 992,877/1,036,982 in 14160s (70 pairs/s)
+rerank 1,000,279/1,036,982 in 14462s (69 pairs/s)
+rerank 1,006,874/1,036,982 in 14763s (68 pairs/s)
+rerank 1,012,676/1,036,982 in 15065s (67 pairs/s)
+rerank 1,017,679/1,036,982 in 15366s (66 pairs/s)
+rerank 1,022,623/1,036,982 in 15668s (65 pairs/s)
+rerank 1,027,567/1,036,982 in 15970s (64 pairs/s)
+rerank 1,032,511/1,036,982 in 16272s (63 pairs/s)
+rerank done 1,036,982 pairs in 16544s
+merged MTEB35 {'dense': 50.68, 'bm25': 33.9, 'fused': 44.4, 'fused60_rerank': 53.65, 'fused100_rerank': 53.47, 'union60_rerank': 53.93, 'oracle_fused_top100': 82.78} 
+  3cat {'dense': 52.46, 'bm25': 36.67, 'fused': 46.94, 'fused60_rerank': 55.33, 'fused100_rerank': 55.27, 'union60_rerank': 55.54, 'oracle_fused_top100': 83.26}
+percat MTEB35 {'dense': 55.41, 'bm25': 39.48, 'fused': 49.81, 'fused60_rerank': 58.48, 'fused100_rerank': 58.12, 'union60_rerank': 58.63, 'oracle_fused_top100': 86.33} 
+  3cat {'dense': 57.74, 'bm25': 43.53, 'fused': 53.39, 'fused60_rerank': 61.14, 'fused100_rerank': 60.92, 'union60_rerank': 61.26, 'oracle_fused_top100': 87.73}
+SCORED
+EXIT 0

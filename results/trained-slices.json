@@ -1,0 +1,386 @@
+{
+ "out of domain|question alone, all tools|released": {
+  "embedder_alone": 32.8,
+  "pipeline": 40.64
+ },
+ "in domain|question alone, all tools|released": {
+  "embedder_alone": 49.93,
+  "pipeline": 59.29
+ },
+ "unseen tools|question alone, all tools|released": {
+  "embedder_alone": 34.59,
+  "pipeline": 42.44
+ },
+ "full test set (nothing removed; for reference only)|question alone, all tools|released": {
+  "embedder_alone": 34.06,
+  "pipeline": 41.96
+ },
+ "out of domain|question alone, all tools|trained embedder": {
+  "embedder_alone": 30.84,
+  "pipeline": 39.0
+ },
+ "in domain|question alone, all tools|trained embedder": {
+  "embedder_alone": 59.84,
+  "pipeline": 61.8
+ },
+ "unseen tools|question alone, all tools|trained embedder": {
+  "embedder_alone": 32.93,
+  "pipeline": 41.13
+ },
+ "full test set (nothing removed; for reference only)|question alone, all tools|trained embedder": {
+  "embedder_alone": 32.96,
+  "pipeline": 40.62
+ },
+ "out of domain|question alone, all tools|trained reranker": {
+  "embedder_alone": 32.8,
+  "pipeline": 41.79
+ },
+ "in domain|question alone, all tools|trained reranker": {
+  "embedder_alone": 49.93,
+  "pipeline": 65.59
+ },
+ "unseen tools|question alone, all tools|trained reranker": {
+  "embedder_alone": 34.59,
+  "pipeline": 43.64
+ },
+ "full test set (nothing removed; for reference only)|question alone, all tools|trained reranker": {
+  "embedder_alone": 34.06,
+  "pipeline": 43.39
+ },
+ "out of domain|question alone, all tools|trained both": {
+  "embedder_alone": 30.84,
+  "pipeline": 40.21
+ },
+ "in domain|question alone, all tools|trained both": {
+  "embedder_alone": 59.84,
+  "pipeline": 67.5
+ },
+ "unseen tools|question alone, all tools|trained both": {
+  "embedder_alone": 32.93,
+  "pipeline": 42.42
+ },
+ "full test set (nothing removed; for reference only)|question alone, all tools|trained both": {
+  "embedder_alone": 32.96,
+  "pipeline": 42.11
+ },
+ "out of domain|question alone, per category|released": {
+  "embedder_alone": 39.33,
+  "pipeline": 46.21
+ },
+ "in domain|question alone, per category|released": {
+  "embedder_alone": 50.8,
+  "pipeline": 60.02
+ },
+ "unseen tools|question alone, per category|released": {
+  "embedder_alone": 41.04,
+  "pipeline": 47.99
+ },
+ "full test set (nothing removed; for reference only)|question alone, per category|released": {
+  "embedder_alone": 40.58,
+  "pipeline": 47.52
+ },
+ "out of domain|question alone, per category|trained embedder": {
+  "embedder_alone": 38.9,
+  "pipeline": 45.19
+ },
+ "in domain|question alone, per category|trained embedder": {
+  "embedder_alone": 60.3,
+  "pipeline": 62.37
+ },
+ "unseen tools|question alone, per category|trained embedder": {
+  "embedder_alone": 40.94,
+  "pipeline": 47.27
+ },
+ "full test set (nothing removed; for reference only)|question alone, per category|trained embedder": {
+  "embedder_alone": 40.98,
+  "pipeline": 46.77
+ },
+ "out of domain|question alone, per category|trained reranker": {
+  "embedder_alone": 39.33,
+  "pipeline": 47.36
+ },
+ "in domain|question alone, per category|trained reranker": {
+  "embedder_alone": 50.8,
+  "pipeline": 66.56
+ },
+ "unseen tools|question alone, per category|trained reranker": {
+  "embedder_alone": 41.04,
+  "pipeline": 49.15
+ },
+ "full test set (nothing removed; for reference only)|question alone, per category|trained reranker": {
+  "embedder_alone": 40.58,
+  "pipeline": 48.91
+ },
+ "out of domain|question alone, per category|trained both": {
+  "embedder_alone": 38.9,
+  "pipeline": 46.31
+ },
+ "in domain|question alone, per category|trained both": {
+  "embedder_alone": 60.3,
+  "pipeline": 68.26
+ },
+ "unseen tools|question alone, per category|trained both": {
+  "embedder_alone": 40.94,
+  "pipeline": 48.43
+ },
+ "full test set (nothing removed; for reference only)|question alone, per category|trained both": {
+  "embedder_alone": 40.98,
+  "pipeline": 48.14
+ },
+ "out of domain|question alone, per source dataset|released": {
+  "embedder_alone": 61.38,
+  "pipeline": 66.03
+ },
+ "in domain|question alone, per source dataset|released": {
+  "embedder_alone": 66.53,
+  "pipeline": 75.54
+ },
+ "unseen tools|question alone, per source dataset|released": {
+  "embedder_alone": 61.86,
+  "pipeline": 66.75
+ },
+ "full test set (nothing removed; for reference only)|question alone, per source dataset|released": {
+  "embedder_alone": 61.71,
+  "pipeline": 66.53
+ },
+ "out of domain|question alone, per source dataset|trained embedder": {
+  "embedder_alone": 63.74,
+  "pipeline": 66.07
+ },
+ "in domain|question alone, per source dataset|trained embedder": {
+  "embedder_alone": 74.8,
+  "pipeline": 76.82
+ },
+ "unseen tools|question alone, per source dataset|trained embedder": {
+  "embedder_alone": 64.49,
+  "pipeline": 66.84
+ },
+ "full test set (nothing removed; for reference only)|question alone, per source dataset|trained embedder": {
+  "embedder_alone": 64.37,
+  "pipeline": 66.62
+ },
+ "out of domain|question alone, per source dataset|trained reranker": {
+  "embedder_alone": 61.38,
+  "pipeline": 66.84
+ },
+ "in domain|question alone, per source dataset|trained reranker": {
+  "embedder_alone": 66.53,
+  "pipeline": 77.26
+ },
+ "unseen tools|question alone, per source dataset|trained reranker": {
+  "embedder_alone": 61.86,
+  "pipeline": 67.51
+ },
+ "full test set (nothing removed; for reference only)|question alone, per source dataset|trained reranker": {
+  "embedder_alone": 61.71,
+  "pipeline": 67.39
+ },
+ "out of domain|question alone, per source dataset|trained both": {
+  "embedder_alone": 63.74,
+  "pipeline": 66.92
+ },
+ "in domain|question alone, per source dataset|trained both": {
+  "embedder_alone": 74.8,
+  "pipeline": 78.58
+ },
+ "unseen tools|question alone, per source dataset|trained both": {
+  "embedder_alone": 64.49,
+  "pipeline": 67.65
+ },
+ "full test set (nothing removed; for reference only)|question alone, per source dataset|trained both": {
+  "embedder_alone": 64.37,
+  "pipeline": 67.51
+ },
+ "out of domain|with instruction, all tools|released": {
+  "embedder_alone": 51.37,
+  "pipeline": 54.14
+ },
+ "in domain|with instruction, all tools|released": {
+  "embedder_alone": 60.17,
+  "pipeline": 66.2
+ },
+ "unseen tools|with instruction, all tools|released": {
+  "embedder_alone": 52.81,
+  "pipeline": 55.72
+ },
+ "full test set (nothing removed; for reference only)|with instruction, all tools|released": {
+  "embedder_alone": 52.46,
+  "pipeline": 55.33
+ },
+ "out of domain|with instruction, all tools|trained embedder": {
+  "embedder_alone": 49.97,
+  "pipeline": 54.03
+ },
+ "in domain|with instruction, all tools|trained embedder": {
+  "embedder_alone": 76.32,
+  "pipeline": 68.71
+ },
+ "unseen tools|with instruction, all tools|trained embedder": {
+  "embedder_alone": 52.24,
+  "pipeline": 55.78
+ },
+ "full test set (nothing removed; for reference only)|with instruction, all tools|trained embedder": {
+  "embedder_alone": 51.98,
+  "pipeline": 55.36
+ },
+ "out of domain|with instruction, all tools|trained reranker": {
+  "embedder_alone": 51.37,
+  "pipeline": 57.06
+ },
+ "in domain|with instruction, all tools|trained reranker": {
+  "embedder_alone": 60.17,
+  "pipeline": 74.89
+ },
+ "unseen tools|with instruction, all tools|trained reranker": {
+  "embedder_alone": 52.81,
+  "pipeline": 58.71
+ },
+ "full test set (nothing removed; for reference only)|with instruction, all tools|trained reranker": {
+  "embedder_alone": 52.46,
+  "pipeline": 58.6
+ },
+ "out of domain|with instruction, all tools|trained both": {
+  "embedder_alone": 49.97,
+  "pipeline": 56.72
+ },
+ "in domain|with instruction, all tools|trained both": {
+  "embedder_alone": 76.32,
+  "pipeline": 77.62
+ },
+ "unseen tools|with instruction, all tools|trained both": {
+  "embedder_alone": 52.24,
+  "pipeline": 58.56
+ },
+ "full test set (nothing removed; for reference only)|with instruction, all tools|trained both": {
+  "embedder_alone": 51.98,
+  "pipeline": 58.41
+ },
+ "out of domain|with instruction, per category|released": {
+  "embedder_alone": 56.77,
+  "pipeline": 60.04
+ },
+ "in domain|with instruction, per category|released": {
+  "embedder_alone": 61.11,
+  "pipeline": 66.77
+ },
+ "unseen tools|with instruction, per category|released": {
+  "embedder_alone": 58.06,
+  "pipeline": 61.52
+ },
+ "full test set (nothing removed; for reference only)|with instruction, per category|released": {
+  "embedder_alone": 57.74,
+  "pipeline": 61.13
+ },
+ "out of domain|with instruction, per category|trained embedder": {
+  "embedder_alone": 58.13,
+  "pipeline": 59.47
+ },
+ "in domain|with instruction, per category|trained embedder": {
+  "embedder_alone": 76.87,
+  "pipeline": 69.2
+ },
+ "unseen tools|with instruction, per category|trained embedder": {
+  "embedder_alone": 60.24,
+  "pipeline": 61.14
+ },
+ "full test set (nothing removed; for reference only)|with instruction, per category|trained embedder": {
+  "embedder_alone": 60.0,
+  "pipeline": 60.72
+ },
+ "out of domain|with instruction, per category|trained reranker": {
+  "embedder_alone": 56.77,
+  "pipeline": 62.44
+ },
+ "in domain|with instruction, per category|trained reranker": {
+  "embedder_alone": 61.11,
+  "pipeline": 75.64
+ },
+ "unseen tools|with instruction, per category|trained reranker": {
+  "embedder_alone": 58.06,
+  "pipeline": 63.95
+ },
+ "full test set (nothing removed; for reference only)|with instruction, per category|trained reranker": {
+  "embedder_alone": 57.74,
+  "pipeline": 63.85
+ },
+ "out of domain|with instruction, per category|trained both": {
+  "embedder_alone": 58.13,
+  "pipeline": 61.81
+ },
+ "in domain|with instruction, per category|trained both": {
+  "embedder_alone": 76.87,
+  "pipeline": 78.18
+ },
+ "unseen tools|with instruction, per category|trained both": {
+  "embedder_alone": 60.24,
+  "pipeline": 63.55
+ },
+ "full test set (nothing removed; for reference only)|with instruction, per category|trained both": {
+  "embedder_alone": 60.0,
+  "pipeline": 63.41
+ },
+ "out of domain|with instruction, per source dataset|released": {
+  "embedder_alone": 73.82,
+  "pipeline": 75.63
+ },
+ "in domain|with instruction, per source dataset|released": {
+  "embedder_alone": 75.09,
+  "pipeline": 79.92
+ },
+ "unseen tools|with instruction, per source dataset|released": {
+  "embedder_alone": 74.17,
+  "pipeline": 76.09
+ },
+ "full test set (nothing removed; for reference only)|with instruction, per source dataset|released": {
+  "embedder_alone": 74.08,
+  "pipeline": 75.95
+ },
+ "out of domain|with instruction, per source dataset|trained embedder": {
+  "embedder_alone": 76.63,
+  "pipeline": 75.68
+ },
+ "in domain|with instruction, per source dataset|trained embedder": {
+  "embedder_alone": 83.15,
+  "pipeline": 80.79
+ },
+ "unseen tools|with instruction, per source dataset|trained embedder": {
+  "embedder_alone": 77.23,
+  "pipeline": 76.19
+ },
+ "full test set (nothing removed; for reference only)|with instruction, per source dataset|trained embedder": {
+  "embedder_alone": 77.17,
+  "pipeline": 76.02
+ },
+ "out of domain|with instruction, per source dataset|trained reranker": {
+  "embedder_alone": 73.82,
+  "pipeline": 77.48
+ },
+ "in domain|with instruction, per source dataset|trained reranker": {
+  "embedder_alone": 75.09,
+  "pipeline": 82.85
+ },
+ "unseen tools|with instruction, per source dataset|trained reranker": {
+  "embedder_alone": 74.17,
+  "pipeline": 77.91
+ },
+ "full test set (nothing removed; for reference only)|with instruction, per source dataset|trained reranker": {
+  "embedder_alone": 74.08,
+  "pipeline": 77.89
+ },
+ "out of domain|with instruction, per source dataset|trained both": {
+  "embedder_alone": 76.63,
+  "pipeline": 77.54
+ },
+ "in domain|with instruction, per source dataset|trained both": {
+  "embedder_alone": 83.15,
+  "pipeline": 83.88
+ },
+ "unseen tools|with instruction, per source dataset|trained both": {
+  "embedder_alone": 77.23,
+  "pipeline": 78.02
+ },
+ "full test set (nothing removed; for reference only)|with instruction, per source dataset|trained both": {
+  "embedder_alone": 77.17,
+  "pipeline": 77.99
+ }
+}

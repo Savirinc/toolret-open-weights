@@ -1,0 +1,1 @@
+{"tag": "q", "pairs_needed": 493868, "pairs_reused": 185212, "pairs_scored": 308656, "rerank_seconds": 1385.2, "maxlen": 1024, "pairs_cut_of_scored": 7310, "mean_tokens_capped_scored": 250.0, "transformers": "5.20.0", "torch": "2.9.1+cu128", "gpu": "NVIDIA L40S"}
